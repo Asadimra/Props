@@ -28,14 +28,15 @@ const Hero = () => {
   ];
   return (
     <div className="flex flex-col md:items-center lg:flex-row lg:justify-around ">
-      {car.map((Boss) => {
+      {car.map((Boss,index) => {
         return (
           <CarCard
+            key={index}
             Name={Boss.carname}
             price={Boss.price}
             review={Boss.review}
             image={Boss.image}
-          />
+          /> 
         );
       })}
     </div>

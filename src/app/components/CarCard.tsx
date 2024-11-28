@@ -1,4 +1,10 @@
-const CarCard = (Props: any) => {
+interface CarCardProps {
+    Name: string;
+    price: string;
+    review: string;
+    image: string;
+  }
+const CarCard = (Props:CarCardProps) => {
   return (
     <div className="mt-10 w-full md:w-4/12 lg:w-2/12  border border-sky-300">
       <div>
